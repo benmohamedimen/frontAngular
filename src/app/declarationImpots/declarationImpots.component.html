@@ -1,0 +1,30 @@
+<div class="container spacer">
+  <div class="panel panel-primary">
+    <div class="panel-heading"></div>
+    <div class="panel-body">
+      <div class="container">
+        <h2>Declaration des impots List</h2>
+
+
+       <table class="table table-striped">
+        <tr>
+          <th>Id</th><th>Type</th><th>Obligation</th><th>Date</th>
+        </tr>
+        <tr *ngFor="let decalarationImpots of declarationImpotss"> 
+          <td>{{decalarationImpots.IdDeclarationImpots}}</td>
+          <td>{{decalarationImpots.TypeDeclarationImpots}}</td>
+          <td>{{decalarationImpots.obligation}}</td>
+          <td>{{decalarationImpots.DateDeclarationImpots}}</td>
+          <td>
+              <button style="margin-left: 20px;" class="btn btn-info"> Voir details </button> 
+          </td>
+        </tr> 
+      </table>
+ 
+      
+     
+        </div>
+    </div>
+  </div>
+ </div>
+ 
