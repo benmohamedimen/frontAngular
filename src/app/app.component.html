@@ -4,7 +4,10 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">OnImpots : Déclaration des impôts en ligne </a>
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/my-logo1.png" alt="">
+          </a>
+      <a class="navbar-brand" href="#">OnImpots : Admin Dashboard </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -16,26 +19,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+              <a routerLink="/contribuables" class="nav-link">Valider les inscriptions</a>
+            
           </li>
          
-          <li class="nav-item">
-            <a routerLink="sinscrire" class="nav-link" routerLinkActive="active">
-              S'inscrire
-            </a>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="#">Se connecter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Documentations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a routerLink="/declarationImpots" class="nav-link">Consulter Declarations</a>
           </li>
         </ul>
       </div>
@@ -45,69 +35,18 @@
   <!-- Page Content -->
   
   <div class="container">
-    <app-contribuables></app-contribuables>
+    
   <router-outlet></router-outlet>
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
       <div class="col-lg-7">
-        <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/images/my-logo.png" alt="">
+       
       </div>
       <!-- /.col-lg-8 -->
-      <div class="col-lg-5">
-        <h1 class="font-weight-light">On Impôts : plateforme de Télé-declaration</h1>
-        <p>Cette plateforme de télé-déclaration a plusieurs avantages en terme de gain de temps,
-          opter pour la déclaration en ligne permet d’éviter les tâches répétitives, les recopies, la documentation
-          lourde ainsi que les nombreux déplacements.</p>
-        <a href="#" class="btn btn-primary" >Déclarer des impots</a>
-      </div>
+     
       <!-- /.col-md-4 -->
     </div>
     <!-- /.row -->
-    
-    
-   
-    <!-- Content Row -->
-    <div class="row">
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Créer un compte</h2>
-            <p class="card-text">Le contribuable doit créer un compte pour pouvoir bénéficier des services en ligne.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Personne Physique</h2>
-            <p class="card-text">Déclarer vos impots sur le revenu, et autres...</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Personne Morale</h2>
-            <p class="card-text">Déclarer vos impots sur les sociétés, les employées et les loyers </p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-
-    </div>
-    <!-- /.row -->
-
   </div>
   <!-- /.container -->
   

@@ -1,3 +1,4 @@
+import { validateConfig } from '@angular/router/src/config';
 
 
 export class Contribuable {
@@ -6,5 +7,6 @@ export class Contribuable {
      password: string;
      dateNaissance: Date;
      email: string;
+
 }
 
