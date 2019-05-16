@@ -11,15 +11,16 @@
             <th>NIF</th><th>login</th><th>password</th><th>dateNaissance</th><th>email</th><th>Status</th>
           </tr>
           <tr *ngFor="let contribuable of contribuables"> 
-            <td>{{contribuable.NIF}}</td>
+            <td>{{contribuable.nif}}</td>
             <td>{{contribuable.login}}</td>
+            <td>{{contribuable.dateNaissance | date: "dd-mm-yyyy"}}</td>
             <td>{{contribuable.password}}</td>
-            <td>{{contribuable.dateNaissance}}</td>
             <td>{{contribuable.email}}</td>
             <td>{{contribuable.Status}}</td>
             <td>
-                <button (click) = 'updateContribuable()' style="margin-left: 20px;" class="btn btn-info"> Valider </button> 
+               <button [routerLink]="['validation', contribuable.nif]" style="margin-left: 20px;" class="btn btn-info">Valider</button>
             </td>
+            
           </tr> 
         </table>
    

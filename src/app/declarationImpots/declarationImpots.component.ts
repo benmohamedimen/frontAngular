@@ -19,5 +19,5 @@ declarationImpots: DeclarationImpots;
       this.declarationImpotss = data;
     });
   }
-
 }
+
